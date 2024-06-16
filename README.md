@@ -15,7 +15,9 @@
 ### Install using poetry
 
 ```bash
-poetry install
+git clone https://github.com/kevin-tofu/esp32-camera-station.git
+cd esp32-camera-station
+poetry add pyproject.toml
 ```
 
 ### Build using docker
