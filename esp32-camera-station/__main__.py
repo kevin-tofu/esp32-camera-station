@@ -10,18 +10,9 @@ from logconf import mylogger
 logger = mylogger(__name__)
 
 
-# dotenv_path = join(dirname(__file__), '.env')
-# load_dotenv(dotenv_path)
-
-# DSN = os.environ.get("DB_NAME")
-# USN = os.environ.get("USER_NAME")
-# PWD = os.environ.get("PASSWORD")
-
-
-
 def envs2config(env_path: str) -> Config:
     # load_dotenv(verbose=True)
-    load_dotenv(env_path)
+    load_dotenv(env_path, verbose=True)
     cam_url = os.environ.get('CAMERASERVER_URL', None)
     sleep_in_loop_ms = int(os.environ.get('SLEEP_IN_LOOP_MS', 100))
     cam = CameraServer(cam_url)
