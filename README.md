@@ -35,5 +35,8 @@ poetry run python esp32-camera-station
 ### Docker
 
 ```bash
-docker run --t -d esp32-station
+docker run -it -d --name mystation /
+ -e "CAMERASERVER_URL=http://172.16.99.32" /
+ -e "SLEEP_IN_LOOP_MS=200" /
+ esp32-station
 ```
