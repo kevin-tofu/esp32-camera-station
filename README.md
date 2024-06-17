@@ -23,6 +23,8 @@ poetry add pyproject.toml
 ### Build using docker
 
 ```bash
+git clone https://github.com/kevin-tofu/esp32-camera-station.git
+cd esp32-camera-station
 docker build -t esp32-station .
 ```
 
