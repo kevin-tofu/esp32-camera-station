@@ -27,6 +27,13 @@ def main(
             float(cfg.sleep_in_loop_ms) / 1000.0
         )
         
+        #Measurement Update
+        
+        
+        #Control Update
+        
+        
+        #Information Update
         
 
 if __name__ == '__main__':
